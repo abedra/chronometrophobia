@@ -4,7 +4,13 @@ A Java TOTP library.
 
 ## Installation
 
-TODO: publish to central and add descriptor
+```xml
+<dependency>
+  <groupId>com.aaronbedra</groupId>
+  <artifactId>chronometrophobia</artifactId>
+  <version>1.0</version>
+</dependency>
+```
 
 ## Usage
 
