@@ -1,4 +1,4 @@
-# chronometrophobia
+# chronometrophobia ![Build](https://github.com/abedra/chronometrophobia/workflows/Java%20CI%20with%20Maven/badge.svg)
 
 A Java TOTP library.
 
