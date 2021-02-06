@@ -23,12 +23,12 @@
         <connection>scm:git:git@github.com:abedra/chronometrophobia.git</connection>
         <developerConnection>scm:git:git@github.com:abedra/chronometrophobia.git</developerConnection>
         <url>https://github.com/abedra/chronometrophobia</url>
-        <tag>HEAD</tag>
+        <tag>chronometrophobia-1.1</tag>
     </scm>
 
     <groupId>org.example</groupId>
     <artifactId>chronometrophobia</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.1</version>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
