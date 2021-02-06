@@ -28,7 +28,7 @@
         <tag>HEAD</tag>
     </scm>
 
-    <groupId>org.example</groupId>
+    <groupId>com.aaronbedra</groupId>
     <artifactId>chronometrophobia</artifactId>
     <version>1.0-SNAPSHOT</version>
 
