@@ -7,10 +7,10 @@ import lombok.Value;
 
 import java.security.SecureRandom;
 
+import static com.aaronbedra.chronometrophobia.Hex.bytesToHex;
 import static com.jnape.palatable.lambda.io.IO.io;
 import static com.jnape.palatable.lambda.monad.transformer.builtin.ReaderT.readerT;
 import static lombok.AccessLevel.PRIVATE;
-import static org.apache.commons.codec.binary.Hex.encodeHexString;
 
 @Value
 @AllArgsConstructor(access = PRIVATE)
@@ -25,7 +25,7 @@ public class Seed {
         return readerT(secureRandom -> io(() -> {
             byte[] randomBytes = new byte[length];
             secureRandom.nextBytes(randomBytes);
-            return seed(encodeHexString(randomBytes));
+            return seed(bytesToHex(randomBytes));
         }));
     }
 }
