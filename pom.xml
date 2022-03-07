@@ -34,6 +34,7 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <lambda.version>5.4.0</lambda.version>
     </properties>
 
     <dependencyManagement>
@@ -41,7 +42,7 @@
             <dependency>
                 <groupId>com.jnape.palatable</groupId>
                 <artifactId>lambda</artifactId>
-                <version>5.3.0</version>
+                <version>${lambda.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -102,7 +103,7 @@
             <plugin>
                 <groupId>org.owasp</groupId>
                 <artifactId>dependency-check-maven</artifactId>
-                <version>6.1.1</version>
+                <version>7.0.0</version>
                 <configuration>
                     <failBuildOnCVSS>1</failBuildOnCVSS>
                 </configuration>
@@ -225,12 +226,12 @@
         <dependency>
             <groupId>com.jnape.palatable</groupId>
             <artifactId>lambda</artifactId>
-            <version>5.3.0</version>
+            <version>${lambda.version}</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.18</version>
+            <version>1.18.22</version>
             <scope>provided</scope>
         </dependency>
 
@@ -249,7 +250,7 @@
         <dependency>
             <groupId>com.jnape.palatable</groupId>
             <artifactId>lambda</artifactId>
-            <version>5.3.0</version>
+            <version>${lambda.version}</version>
             <type>test-jar</type>
             <scope>test</scope>
         </dependency>

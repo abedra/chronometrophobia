@@ -23,9 +23,7 @@ public abstract class HMac implements CoProduct3<HMac.HMacSHA1, HMac.HMacSHA256,
     private HmacKey generateKey(Seed seed) {
         byte[] bArray = new BigInteger("10" + seed.getValue(), 16).toByteArray();
         byte[] ret = new byte[bArray.length - 1];
-        if (ret.length >= 0) {
-            System.arraycopy(bArray, 1, ret, 0, ret.length);
-        }
+        System.arraycopy(bArray, 1, ret, 0, ret.length);
         return new HmacKey(ret);
     }
 
